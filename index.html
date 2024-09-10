@@ -2,175 +2,210 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightBlog</title>
+    <title>Sihtric's Legacy</title>
 </head>
 <body>
     <header>
-        <!-- the content of the header goes hear -->
-        <h1 id="logo">BrightBlog</h1>
-        <nav>
-            <ul id="nav-ul">
-                <li><a href="" class="navbutton">Home</a></li>
-                <li><a href="" class="navbutton">About us</a></li>
-                <li><a href="" class="navbutton">Contact</a></li>
+        <h1 id="logo">SIHTRIC'S LEGACY</h1>
+        <h2 id="tagline">An Alternate History Mod for EUIV</h2>
+        <nav id="header-nav">
+            <ul>
+                <li><a href="#top" class="navbutton">Home</a></li>
+                <li><a href="#about-the-mod" class="navbutton">About</a></li>
+                <li><a href="#about-the-devs" class="navbutton">The Team</a></li>
+                <li><a href="" class="navbutton">The Mod</a></li>
             </ul>
         </nav>
+        <hr>
     </header>
     <main>
-        <div id="main-content">
-            <aside>
-                <sec>
-                    <h4>Filter by Month</h4>
-                    <nav>
+        <aside>
+            <section id="aside-nav"> <!-- there may be a better semantic tag for this but im not sure what it is come back to it-->
+                <h4>Filter by Category</h4>
+                <nav>
+                    <ul>
+                        <li><a href="">Dev Diaries</a></li>
+                        <li><a href="">Region Setups</a></li>
+                        <li><a href="">Other</a></li>
+                    </ul>
+                </nav>
+                <!--filtering by date or something next not sure-->
+            </section>
+            <article id="about-the-mod">
+                <header>
+                    <h2>What is Sihtric's Legacy?</h2>
+                    <p>Sihtric's Legacy is a mod for the game Europa Universalis IV (EUIV), a Grand Strategy game by Paradox Interactive in which you take control of a country during the Early Modern Period. This mod (among others) presents an alternate version of history, meaning the various countries to choose from and their situations differ greatly from real history, creating a very different experience.</p>
+                    <p>In this world's version of the 15th century, Welsh Kings exert an increasingly decentralised rule over Britain as their authority is challenged by powers both within and beyond their borders; Crusader states have failed to fully dislodge their Muslim rivals from Iberia and Sicily; and the Holy Roman Emperors rule from Italy with the support of Popes almost entirely subordinate to their rule, fueling discontent around much of the Catholic world. Or at least that's the plan so far.</p>
+                </header>
+            </article>
+        </aside>
+        <div id="blog-posts-section">
+            <article class="blog-post" id="bp-introduction">
+                <!--Introduction and roadmap-->
+                <header>
+                    <h2>An Introduction to Sihtric's Legacy</h2>
+                </header>
+                <main>
+                    <article id="bp-introduction-introductory-paragraph">
+                        <p>Welcome to the Official Website for the Sihtric's Legacy (Working Title) Mod!</p>
+                        <p>Sihtric's Legacy is an alternate history mod in development for Europa Universalis IV (EUIV), a Grand Strategy game by Paradox Interactive set in the Early Modern Period. As an alternate history mod, it aims to replace EUIV's start date with a completely different scenario of the same period, depicting how the World might have looked if some events did or didn't happen, or happened in different ways to reality. The history depicted in the mod diverges from real history around the 9th Century, and the intention is that, eventually, it will depict changes across most of the Old World, with the changes rippling outwards from Britain.</p>
+                        <p>While the mod will contain lots of unique regional flavour content and mechanics, the intention is that the overall gameplay of EUIV be kept intact, only changing to represent individual situations in unique and interesting ways without touching universal mechanics. As part of this, it will also aim to represent this fictional history in the way that Paradox might've done had it been real history. For example, the way that cultures are grouped and represented in EUIV is partially influenced by practicality for gameplay in balance with trying to accurately represent the situation; the mod, in trying to imitate this approach, may in some places have cultures represented differently from the base game not due to the alternate history prior to the start date, but for gameplay purposes as the game plays out.</p>
+                        <p>This website will act as a log of the mod's development and an opportunity to gain feedback from those interested in potentially playing the mod when it releases. It will feature development diaries detailing what is currently being worked on and posts outlining the planned overall setup of different regions, both of which will be hopefully somewhat regular, as well as potentially some more sporadic posts covering other topics related to the mod's development.</p>
+                        <p>To give you something of a taster, however, I have detailed below the plans (broad strokes) for the mod and its development for you to have a look at. Otherwise, that's all for this post and thank you for taking the time to read it.</p>
+                    </article>
+                    <article id="bp-introduction-content-so-far">
+                        <h3>Content so far</h3>
+                        <p>To give a broad idea of what the mod will entail, below is a summary of the planned content so far:</p>
                         <ul>
-                            <li><a href="">Filter for January</a></li>
-                            <li><a href="">Filter for February</a></li>
-                            <li><a href="">Filter for March</a></li>
+                            <li>Britain is ruled as a greatly decentralised Kingdom under Welsh Kings, whose authority is threatened by over-ambitious subjects, the Normans who hold sway over the Earldom of Wessex, and potentially other powers in the North Sea looking to expand their own influence. Meanwhile, Ireland has been largely consolidated into a single Kingdom which now sets its sights overseas in hopes of futher expanding its wealth and influence.</li>
+                            <li>Most of Northern France has been consolidated into the Archduchy of Normandy after a period of various Norman Dukes vying for power in the aftermath of the collapse of authority of the French Kings. They now attempt to extend their influence across the channel contesting the Kings of Britain, into the lowlands against the Frisians, and over the breakway duchies of France to assert themselves as the legitimate successors of the French Kings.</li>
+                            <li>In the South of France, the independent Dukes of Toulouse have managed to consolidate their rule over Occitania, while across the Pyrenees the Aragonese now attempt to exert their influence over the Mediterranean. The possibility of a union between the two could be greatly beneficial for both, helping them against their common rivals in Italy and elsewhere.</li>
+                            <li>In the West of Iberia, the Catholic Kingdoms still struggle against the Muslim Taifa states to the South which were not subjugated by the Almoravids or Alomohads of Morocco.</li>
+                            <li>Rule over Imperial Italy has been consolidated by successive Holy Roman Emperors such that the Emperors now largely rule from there and have managed even to assert their authority over the Papal States under the guise of protecting them from Muslim threats in the Mediterranean, which although now greatly weakened by the various Crusader States, still cling to their power base in Sicily.</li>
+                            <li>Much of Western Carpathia and the Balkans is now incorporated into the Holy Roman Empire as the Emperors increasingly turn their attention South, intensifying their rivalry with the Byzantines to their East. Byzantine control over Anatolia meanwhile is now quite precarious, with Christianised Turkish Beyliks ruling nominally in their stead, but potentially posing a threat to the stability of the whole Empire should they turn against their Overlords.</li>
+                            <li>The German States which make up the bulk of the Northern Holy Roman Empire grow increasingly frustrated with the neglect and restrictions of the Emperors, with the Frisians to the West managing to evade incorporation into the Empires feudal hierarchy, and the Slavic Pomeranians and Sorbs to the East being protected from the ambitions of the German Princes. Only the Merchant Republics which have extended their influence across the Baltic seem content with the current state of affairs.</li>
+                            <li>In Scandinavia, the loss of Jutland and its settlement by the Low Germans combined with capture of the islands of the Danish archipelago by Merchant Republics have resulted in Sweden becoming the undisputed power in the region. Should the Kingdom manage to consolidate its power in the peninsula and build a capable navy, It will hold a strongly defensible position from which it can exert its power abroad.</li>
                         </ul>
-                    </nav>
-                </sec>
-                <sec>
-                    <h4>Filter by Category</h4>
-                    <nav>
-                        <ul>
-                            <li><a href="">Puppies</a></li>
-                            <li><a href="">Dogs</a></li>
-                            <li><a href="">Cats</a></li>
-                            <li><a href="">Hedgehogs</a></li>
-                        </ul>
-                    </nav>
-                </sec>
-            </aside>
-            <div>
-                <article>
-                    <header>
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read time: 5 minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ratione ex dolores excepturi exercitationem molestiae fugit voluptatum debitis. Distinctio aperiam inventore, suscipit repudiandae nobis optio tenetur fugiat, cupiditate vitae ipsam quo rerum totam! Id, perspiciatis? Ipsam quis quam nobis dolores tenetur quos dolorem eligendi consectetur neque a dolorum, doloremque corrupti minus autem explicabo hic doloribus assumenda eaque dignissimos dolore tempore dicta exercitationem. Unde odio rem commodi fuga eum molestias. Sunt a repellat facilis tenetur ducimus maxime dolorem omnis eveniet quaerat necessitatibus, laudantium autem reiciendis provident nesciunt nostrum quibusdam ea non quae tempore nisi voluptas. Magni id reprehenderit architecto dicta veritatis!</p>
-                        <blockquote>
-                            "Lorem ipsum" - <cite>Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad quidem fugiat natus, dolorem similique, officia sint soluta omnis error consectetur, itaque culpa! Soluta, dignissimos culpa. A velit animi sunt ea aut vero, quis blanditiis commodi cupiditate saepe aliquid ex praesentium iure, ducimus ad fugiat, voluptatem aperiam. Possimus, quaerat, tenetur voluptatum quam quas nobis officia quibusdam quis ratione rem vel, distinctio at deleniti atque. Soluta, libero itaque! Architecto, sapiente hic? Totam aspernatur excepturi incidunt inventore officiis dolor natus placeat tempora.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo quod nesciunt cupiditate molestias enim porro soluta exercitationem unde minima eaque eligendi ratione explicabo vel, asperiores quaerat quia. Repellat at quibusdam nobis perspiciatis officiis! Voluptatum reiciendis culpa optio obcaecati sequi. Architecto neque dicta quam, laudantium harum explicabo nemo odit animi fugit corrupti fugiat. Ea, rerum dicta atque quod voluptatem quaerat dolores ducimus quidem maiores alias deleniti, fuga et eligendi debitis, consectetur nisi iusto inventore. Velit rerum corrupti labore, iure similique ad dolores autem quibusdam enim laudantium laboriosam incidunt exercitationem molestiae sapiente ducimus quia eius repudiandae aliquam id temporibus. Perferendis, officiis corrupti. Nemo, alias blanditiis perspiciatis a reprehenderit eligendi, sunt aliquid magni ducimus voluptatum unde? Aliquid quisquam maiores nihil officiis unde consequuntur! Nulla tenetur nam eius repudiandae harum accusantium saepe dicta maxime fuga, quas atque nisi quis soluta repellendus sint iure ex dolorem, obcaecati asperiores, tempora officia ipsum odit natus repellat!</p>
-                    </main>
-                    <footer>
-                        <h2>Author: Me</h2>
-                        <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
-                        <h3>Posted: 21-08-2024</h3>
-                        <a href="https://youtu.be/w_vk7UwFBhc?si=RT561fWU5odvGwhe" target="_blank">A good track</a>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read time: 5 minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ratione ex dolores excepturi exercitationem molestiae fugit voluptatum debitis. Distinctio aperiam inventore, suscipit repudiandae nobis optio tenetur fugiat, cupiditate vitae ipsam quo rerum totam! Id, perspiciatis? Ipsam quis quam nobis dolores tenetur quos dolorem eligendi consectetur neque a dolorum, doloremque corrupti minus autem explicabo hic doloribus assumenda eaque dignissimos dolore tempore dicta exercitationem. Unde odio rem commodi fuga eum molestias. Sunt a repellat facilis tenetur ducimus maxime dolorem omnis eveniet quaerat necessitatibus, laudantium autem reiciendis provident nesciunt nostrum quibusdam ea non quae tempore nisi voluptas. Magni id reprehenderit architecto dicta veritatis!</p>
-                        <blockquote>
-                            "Lorem ipsum" - <cite>Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad quidem fugiat natus, dolorem similique, officia sint soluta omnis error consectetur, itaque culpa! Soluta, dignissimos culpa. A velit animi sunt ea aut vero, quis blanditiis commodi cupiditate saepe aliquid ex praesentium iure, ducimus ad fugiat, voluptatem aperiam. Possimus, quaerat, tenetur voluptatum quam quas nobis officia quibusdam quis ratione rem vel, distinctio at deleniti atque. Soluta, libero itaque! Architecto, sapiente hic? Totam aspernatur excepturi incidunt inventore officiis dolor natus placeat tempora.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo quod nesciunt cupiditate molestias enim porro soluta exercitationem unde minima eaque eligendi ratione explicabo vel, asperiores quaerat quia. Repellat at quibusdam nobis perspiciatis officiis! Voluptatum reiciendis culpa optio obcaecati sequi. Architecto neque dicta quam, laudantium harum explicabo nemo odit animi fugit corrupti fugiat. Ea, rerum dicta atque quod voluptatem quaerat dolores ducimus quidem maiores alias deleniti, fuga et eligendi debitis, consectetur nisi iusto inventore. Velit rerum corrupti labore, iure similique ad dolores autem quibusdam enim laudantium laboriosam incidunt exercitationem molestiae sapiente ducimus quia eius repudiandae aliquam id temporibus. Perferendis, officiis corrupti. Nemo, alias blanditiis perspiciatis a reprehenderit eligendi, sunt aliquid magni ducimus voluptatum unde? Aliquid quisquam maiores nihil officiis unde consequuntur! Nulla tenetur nam eius repudiandae harum accusantium saepe dicta maxime fuga, quas atque nisi quis soluta repellendus sint iure ex dolorem, obcaecati asperiores, tempora officia ipsum odit natus repellat!</p>
-                    </main>
-                    <footer>
-                        <h2>Author: Me</h2>
-                        <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
-                        <h3>Posted: 21-08-2024</h3>
-                        <a href="https://youtu.be/w_vk7UwFBhc?si=RT561fWU5odvGwhe" target="_blank">A good track</a>
-                    </footer>
-                </article>
-                <article>
-                    <header>
-                        <h2>Ten Amusing Facts About Dogs</h2>
-                        <h3>Read time: 5 minutes</h3>
-                    </header>
-                    <main>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam ratione ex dolores excepturi exercitationem molestiae fugit voluptatum debitis. Distinctio aperiam inventore, suscipit repudiandae nobis optio tenetur fugiat, cupiditate vitae ipsam quo rerum totam! Id, perspiciatis? Ipsam quis quam nobis dolores tenetur quos dolorem eligendi consectetur neque a dolorum, doloremque corrupti minus autem explicabo hic doloribus assumenda eaque dignissimos dolore tempore dicta exercitationem. Unde odio rem commodi fuga eum molestias. Sunt a repellat facilis tenetur ducimus maxime dolorem omnis eveniet quaerat necessitatibus, laudantium autem reiciendis provident nesciunt nostrum quibusdam ea non quae tempore nisi voluptas. Magni id reprehenderit architecto dicta veritatis!</p>
-                        <blockquote>
-                            "Lorem ipsum" - <cite>Zsolt, 2024</cite>
-                        </blockquote>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ad quidem fugiat natus, dolorem similique, officia sint soluta omnis error consectetur, itaque culpa! Soluta, dignissimos culpa. A velit animi sunt ea aut vero, quis blanditiis commodi cupiditate saepe aliquid ex praesentium iure, ducimus ad fugiat, voluptatem aperiam. Possimus, quaerat, tenetur voluptatum quam quas nobis officia quibusdam quis ratione rem vel, distinctio at deleniti atque. Soluta, libero itaque! Architecto, sapiente hic? Totam aspernatur excepturi incidunt inventore officiis dolor natus placeat tempora.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam illo quod nesciunt cupiditate molestias enim porro soluta exercitationem unde minima eaque eligendi ratione explicabo vel, asperiores quaerat quia. Repellat at quibusdam nobis perspiciatis officiis! Voluptatum reiciendis culpa optio obcaecati sequi. Architecto neque dicta quam, laudantium harum explicabo nemo odit animi fugit corrupti fugiat. Ea, rerum dicta atque quod voluptatem quaerat dolores ducimus quidem maiores alias deleniti, fuga et eligendi debitis, consectetur nisi iusto inventore. Velit rerum corrupti labore, iure similique ad dolores autem quibusdam enim laudantium laboriosam incidunt exercitationem molestiae sapiente ducimus quia eius repudiandae aliquam id temporibus. Perferendis, officiis corrupti. Nemo, alias blanditiis perspiciatis a reprehenderit eligendi, sunt aliquid magni ducimus voluptatum unde? Aliquid quisquam maiores nihil officiis unde consequuntur! Nulla tenetur nam eius repudiandae harum accusantium saepe dicta maxime fuga, quas atque nisi quis soluta repellendus sint iure ex dolorem, obcaecati asperiores, tempora officia ipsum odit natus repellat!</p>
-                    </main>
-                    <footer>
-                        <h2>Author: Me</h2>
-                        <img src="https://placebear.com/100/100" alt="A profile pic of a bear">
-                        <h3>Posted: 21-08-2024</h3>
-                        <a href="https://youtu.be/w_vk7UwFBhc?si=RT561fWU5odvGwhe" target="_blank">A good track</a>
-                    </footer>
-                </article>
-            </div>
+                    </article>
+                    <article id="bp-introduction-roadmap">
+                        <h3>Roadmap</h3>
+                        <p>As creating interesting and unique content for most of the Old World is quite an ambitious goal, I will be breaking it up into smaller goals and handling these in multiple phases. Firstly, for every region I will first do the province set up, starting rulers and diplomacy, and basic government reform or subject mechanics where necessary for representing the situation. I may also add some minor unique content for some of the more major nations, such a small number of events and a small mission tree or unique branch of missions.</p>
+                        <p>Later I will then return to these regions to give the various tags (Countries) or groups of tags unique goverment reforms, mechanics, mission trees, events, national ideas, and more. This will also include fleshing out smaller details such as dynamic province, parliament or government reform names.</p>
+                        <p>The intention is to release the mod with the first stage of development done for all or most of Europe, and then future updates will choose one region to focus on for carrying out the second stage of development in. This is not dissimilar to the way Paradox themselves often structure their updates, particularly their "Immersion Pack" DLCs, or to how other mods, such as <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1908400374&searchtext=" target="_blank">Ante Bellum</a> handle their updates. As the regions I cover in these updates approach other regions which have not undergone the first stage of development I will likely carry out that earlier stage of development for that neighbouring region in the same update (for example, an update adding unique missions, ideas and other content to the Maghreb may also include covering the initial general set up of the regions of West Africa to its South.)</p>
+                        <p>For the time being I am not sure exactly what order I will cover content for different regions, but updates will likely start with Britain and then move onto France and continue onto other adjacent regions from there. Updates may cover a couple of in-game regions per update, in which case France and Britain may be done as a single update, but this depends on what ends up making the most sense based on time and work taken to produce an update and how regional content interacts with other region's content. And other factors. Basically, we'll see how things go.</p>
+                        <p>This is not a particularly strict roadmap or anything, just an overall outline, and I'm sure all different things will need tweaking at various points regardless of what the main focus of an update is. Nevertheless, hopefully this gives a rough idea of what to expect as the mod progresses and what you've heard sounds interesting.</p>
+                    </article>
+                </main>
+                <footer>
+                    <h3 class="article-author">Author: <a href="https://steamcommunity.com/id/JimmalyBob/" target="_blank"> <img src="https://avatars.akamai.steamstatic.com/d3178fdab4b1b665c1ec8952eaf851fede686a08_full.jpg" alt="Author's Steam profile picture"> <!--not sure about using this link not sure how else to do it though really. look into javascript stuff ig. also not sure putting an img tag in an a tag is semantic html but makes more sense to me than using css to change the interactable area of the text--> JimmalyBob</a>, Lead Developer of Sihtric's Legacy</h3>
+                    <h4>Posted: 06-09-2024</h4>
+                </footer>
+            </article>
+            <article class="blog-post" id="rs1-british-isles">
+                <!--British Isles Region Article-->
+                <header>
+                    <img src="images/britain_region.png" alt="A map of EUIV's Britain region">
+                    <h2>Region Setup #1: Britain and Ireland</h2>
+                </header>
+                <main>
+                    <div class="image-with-caption" id="british-area-map">
+                        <img src="images/britain_region_areas.png" alt="A map of how the areas are currently planned to be divided for the Britain region">
+                        <h5>Only the areas within England have been changed at least for the time being, as in EUIV's base game they are partially based on administrative divisions within England which would have never come to be in this alternate version of events.</h5>
+                    </div>
+                    <p>Welcome to the first of (hopefully) many posts in a series discussing the planned set up for regions in Sihtric's Legacy! To start with we will be looking at Britain and Ireland, labelled under the "Britain" region in EUIV. For some of the future posts you may see that I have changed the borders of regions to better suit the changed situations of regions, but the Britain region, at least for now, I have left as it is in the base game, though the areas they are categorised in have changed somewhat to reflect changes in history.</p>
+                    <p>So, Let's get started with the history then. The history diverges during the 9th Century, after Alfred the Great suffers defeat at the hands of the Vikings of the newly established Danelaw, England spends nearly a century largely subject to various Danish Kings established by the Danelaw. However in the 10th Century, Hywel Dda, (or Howel the Good) who historically united Wales under his rule, manages to continue with successful campaigns across Britain, such that by the end of his reign, he has a strong control of the island and those rulers who have not been replaced with other members of the Welsh nobility have nonetheless been forced to acknowledge his seniority as King of Britain.</p>
+                    <p>Over the centuries, the authority of Hywel Dda's successors wanes however, and by the 15th Century, though their role as defenders of Britain is still acknowledged by the various rulers of the island bar the clans of the Highlands, these rulers otherwise act largely autonomously. Additonally, the Norman Dukes have through dynastic ties managed to subjugate the West Saxons, while the clans of Ireland have largely united under one High Kingdom and now control outposts in Britain. Both of these outside threats have called into question the Welsh Kings' effectiveness and legitimacy to rule.</p>
+                    <div class="image-with-caption">
+                        <img src="images/britain_region_political.png" alt="The geopolitical map of the Britain region">
+                        <h5>The Geopolitical map of the Britain region</h5>
+                    </div>
+                    <p>Now for the political map mode:</p>
+                    <ul>
+                        <li>Ireland is largely united under a single ruler, with only the Scandinavian-influenced Dublin and Ulster, which holds some land in the Scottish Highlands, as vassals of the Irish High Kingdom. The province of Cornwall is also owned by Ireland.</li>
+                        <li>Wales, the current ruler of Britain, controls all of real-world Wales and has expanded eastwards somewhat. It holds Cornwall to its South, East Anglia separated further East, and the interesting City of London, which holds a unique status as an autonomous merchant republic and the capital of the British Kingdom, as vassals.</li>
+                        <li>The other parts of the Kingdom of Britain are represented as a tributary-like unique subject type, currently being referred to as a British Earldom, though I feel a more Welsh (or at least less English) name may be more appropriate. These include Cornwall to the West, Strathclyde, Northumbria and the Picts to the North, and Mercia in the East Midlands, as well as the one province minors which are Lindsey, the city states of Hull and Sheffield, and in the South East the Archbishopric of Canterbury.</li>
+                        <li>In the South, the Earldom of Wessex lies in personal union with Normandy in Northern France</li>
+                        <li>In the far North, the pagan Kingdom of the Isles rules in Mann, the Hebrides and Orkney independently, and in parts of the Highlands the Gaelic clans also maintain their independence.</li>
+                    </ul>
+                    <p>While I have considered introducing some pre-lutheran heresies in the region, for the time being as far as religion is concerned, the region is homogenously Catholic, with the exception of Norse Paganism which is maintained in Dublin and in the provinces owned by the Isles, as well as being that Kingdom's state religion. The cultures, however, have become far more interesting. Firstly, due to the changed political situation the groupings have been changed to a Celtic and an Anglian/English group, rather than the Gaelic and British groups seen in the base game. This means that the Brittonic Celtic cultures have been shifted to join the Gaelic Celts rather than Anglian cultures. The Anglian group may also be merged with the Germanic or more likely the Nordic culture group instead of being a distinct group, though if they do remain a distinct group I will likely eventually add a way to join at least one of those culture groups.</p>
+                    <div class="image-with-caption" id="british-culture-maps">
+                        <img src="images/britain_region_celtic_cultures.jpg" alt="A screenshot of the Celtic culture group in the Britain region" id="britain-celtic-culture-map">
+                        <img src="images/britain_region_english_cultures.jpg" alt="A screenshot of the Anglian culture group in the Britain region" id="britain-english-culture-map">
+                        <h5 id="britain-culture-map-caption">On the Left are the Celtic cultures, and on the right, the Anglian cultures (this time using actual Screenshots! Most of the rest of the content needed some cleaning up and improving so it was easier to edit an image, but for the cultures it made more sense to do it this way).</h5>
+                    </div>
+                    <p>As for the actual changes in the cultures beyond just how they are being grouped, they are as follows:</p>
+                    <ul>
+                        <li>
+                            In the Celtic group:
+                            <ul>
+                                <li>Norse-Gaelic in Dublin, the Hebrides and Mann (Orkney remains Norwegian for now) represent the Gaelic speaking areas most strongly influenced by the Vikings</li>
+                                <li>Pictish in the Scottish Lowlands is the result of the area neither falling under the control of the Gaelic speaking Highlanders nor the influence of the Germanic Northumbrians (which both happened historically, with the area becoming first Gaelic speaking and later speaking Scots, a language descended from Old English) due to the protection of the Kings of Britain, speaking the Pictish language, a Brittonic language.</li>
+                                <li>Cumbrian in Lancashire, Cumbria and into South West Scotland, due to the area similarly being protected by the Welsh Kings of Britain from being conquered by their Northumbrian neighbours to the East, speaking Cumbric, a Brittonic language</li>
+                                <li>Welsh has been expanded into Coventry and Gloucestershire due to prolonged direct control by the Welsh Kings which lead to settlement by peoples from Wales and Germanic peoples either assimilating into the Welsh culture or fleeing East</li>
+                                <li>Cornish has also expanded East for similar reasons, with much of the area being controlled by Cornwall as a vassal of Wales</li>
+                            </ul>
+                        </li>
+                        <li>
+                            In the Anglian group:
+                            <ul>
+                                <li>West Saxon in Sussex, Kent, Oxfordshire, Hampshire and Dorset, continuing from the culture of the Kingdom of Wessex with a language descending from West Saxon Old English, which also came to replace the Kentish Old English and has since been influenced by connections with the Normans</li>
+                                <li>Mercian in the East Midlands, continuing from the culture of the Kingdom of Mercia with a language descending from Mercian Old English</li>
+                                <li>East Anglian in the South East, continuing from the culture of the Kingdom of East Anglia and similarly descending from Mercian Old English, but having been influenced by slightly stronger connections with the Dutch and Frisians</li>
+                                <li>Northumbrian in Yorkshire and Northumberland, continuing from the culture of the Kingdom of Northumbria, descending from Northumbrian Old English</li>
+                                <li>Additionally, all of these cultures have experienced much greater Scandinavian influence due to the prolonged period of Viking settlement and rule prior to the Welsh conquest of Britain, as well as some minor Welsh influence due to the decentralised but still present rule of the Welsh Kings</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Other changes:
+                            <ul>
+                                <li>Scottish (which in the base game represented the Scots speaking Lowlands) never came to be</li>
+                                <li>English similarly no longer exists, though this is instead due to the lack of any unified English Kingdom to allow the different English cultrues to merge into a more homogenous culture</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="image-with-caption" id="british-trade-map">
+                        <img src="images/britain_region_trade.jpg" alt="A map of the trade node setup in the Britain region">
+                        <h5 id="britain-culture-map-caption">A map of the current trade node setup in the Britain Region</h5>
+                    </div>
+                    <p>Finally, I have also made some changes to the trade nodes although they are very much a work in progress. This is largely because I wanted to allow for Ireland to receive trade from Guinea as this gives it easier access to Old World trade, allowing for a Portuguese style of colonialism, taking outposts on the route to the East Indies, and because I felt trade in the British Isles should feed into the Lubeck trade node as it makes sense for potential major powers in Scandinavia and Germany to have more access to trade from Britain and by extension colonial trade. The South West of Britain and Ireland is in the Celtic trade node which partially replaces the base game English Channel trade node, and receives trade from the New World and Guinea while flowing into the Lubeck and North Sea trade nodes. The North East is in an expanded North Sea trade node which also receives trade from the New World and flows into Lubeck. This also means Lubeck is now an end Nnode, though I am considering splitting the Lubeck node in two - though that is something for a future post!</p>
+                    <p>That's all for today! Unfortunately I have not done enough work on some other aspects of the setup (province development) to be able to share anything more with you, but hopefully you have found this inaugural post interesting, and I will see you in the next region setup post where we will be talking about France!</p>
+                </main>
+                <footer>
+                    <h3 class="article-author">Author: <a href="https://steamcommunity.com/id/JimmalyBob/" target="_blank"> <img src="https://avatars.akamai.steamstatic.com/d3178fdab4b1b665c1ec8952eaf851fede686a08_full.jpg" alt="Author's Steam profile picture"> <!--not sure about using this link not sure how else to do it though really. look into javascript stuff ig. also not sure putting an img tag in an a tag is semantic html but makes more sense to me than using css to change the interactable area of the text--> JimmalyBob</a>, Lead Developer of Sihtric's Legacy</h3>
+                    <h4>Posted: 09-09-2024</h4>
+                </footer>
+            </article>
+            <article class="blog-post" id="bp-mod-name-discussion">
+                <!--Mod name discussion-->
+                <header>
+                    <h2>Regarding the Name of the Mod</h2>
+                </header>
+                <main>
+                    <div class="image-with-caption">
+                        <img src="images/england_early_version.png" alt="An early version of the mod showing the political map mode over England">
+                        <h5>Above shows the the results of some of my first attempts at modding, with England divided between Normandy in the South, Mercia in the Midlands, and Jorvik (York) in the North.</h5>
+                    </div>
+                    <div id="bp-name-disc-maintext">
+                        <p>This website (at the time of writing) uses the earliest name of this mod, that being Sihtric's (or Sigtrygg's) Legacy. Regardless of opinions on how good or bad this title sounds, it should probably be changed, as it no longer adequately describes the mod. I however am not very good at naming things and as such it has gone unchanged, which is why this website (at the time of writing) still bears the name, and why many of the files in the mod are distinguished with the abbreviation "sgl." For this reason, I thought it might be a good idea to receive suggestions and feedback from others, which is what this post is about.</p>
+                        <p>First though, I would like to give some context on how this name came to be and why I feel it no longer makes much sense: this title came from a much earlier plan of the mod, one where Wessex still successfully defeated the Great Heathen Army but where the Danish Kingdom of York was not successfully incorporated into this state, and once the Norman conquest took place, it supported the revolts within England against William, resulting in a stalemate and England splintering once more.</p>
+                        <p>This mostly came out of a desire to have uniting England as an interesting goal for players, as well as being able to allow the player to create a hypothetical more "Scandinavian" England (by uniting England as the Kingdom of York), or a more "Anglo-Saxon" one where the Norman conquest never happened (by uniting it as one of the states which revolted from Norman rule), or even to recreate a Norman-ruled England (by retaking the rest of England as one of William's descendants). It is probably also worth mentioning I wasn't very subtle with my intentions when it came to representing this in-game, with the North of England being culturally "Anglo-Norse," the Midlands "Anglo-Saxon" and the South "Anglo-Norman" - the latter of these is also confusing because Anglo-Norman is a real term which refers to something slightly different. These cultures have still in a sense survived in the current plans for the game, in the form of the Northumbrian, Mercian and West Saxon cultures.</p>
+                        <p>Another feature of this earlier version of the mod was that I wanted the independent Danish Kingdom to still be followers of Norse Paganism, as I felt that would also make things more interesting (though it certainly made the mod feel somewhat sillier too, which is part of why it got scaled back, first to Norse Pagan revolts in a more recently converted Catholic Kingdom of York, and then to what it is now with minor hold-outs in Ireland and the Kingdom of the Isles.)</p>
+                        <p>Finally, I was also quite attached to the idea that all of the changes in the mod could eventually be traced back, however obscurely or indirectly, to a single event from which this "timeline" would split off from our own history. Naturally, I went about looking for such an opportunity by browsing Wikipedia, and eventually learnt about how King Æthelstan (who is often described as the first King of England in no small part due to his subjugation of the Danish Kingdom of York and its incorporation into England) invaded York after the death of a certain <a href="https://en.wikipedia.org/wiki/Sitric_C%C3%A1ech" target="_blank">Sihtric Cáech</a>, or Sigtrygg Gále - who ruled the Kingdoms of York and Dublin - in 927 AD of apparently unknown causes.</p>
+                        <p>From here, you can probably see how the name came about. The alternate history being depicted would be presented as entirely the result of changing something about a man named Sihtric, and as such would be showing how his legacy has shaped history.</p>
+                        <p>Now this is all very well and good, but the mod has undergone many revisions since then, particularly once I brought in a friend to help me write the alternate history. No part of the alternate history hinges on any men named Sihtric anymore and the Sihtric's originally referred to in the title likely never gets to exist, and certainly never gets to be King of York.</p>
+                        <p>My friend has since suggested another name for the mod, <i lang="la">Nostro Sacro Impero</i> (Latin for "Our Holy Empire") as they had quickly singled out (and improved) my ideas about the changes to the Holy Roman Empire and its interactions with the Papacy as the most interesting part of the mod. I am admittedly, however, somewhat attached to the current name now, and am also undecided about a latin name for the mod, though there is precedent for it among EUIV mods (See <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1908400374&searchtext=" target="_blank">Ante Bellum</a>, Which is probably the most popular alternate history mod for the game, as well as the more recent <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3142739241&searchtext=post+finem" target="_blank">Post Finem</a>.)</p>
+                        <p>So, I invite you to help me decide by deciding for yourselves! This is intended as more of an opinion poll than a vote, but nonetheless I would be interested to hear a broader set of opinons (please.)</p>
+                    </div>
+                    <form action="" method="">
+                        <label for="email" id="form-email-label">Email (to avoid multiple submissions - will not be recorded)</label>
+                        <input type="email" name="email" id="form-email-input" required>
+                        <label for="choose_name" id="form-choose-name-label">Which name do you prefer?</label>
+                        <select name="choose_name" id="form-choose-name-input">
+                            <option value="sihtrics_legacy_name">Sihtric's Legacy</option>
+                            <option value="nostro_sacro_impero_name">Nostro Sacro Impero</option>
+                        </select>
+                        <label for="suggest_name" id="form-suggest-name-label">Enter your own suggestion for a name (Max. 40 characters)</label>
+                        <textarea name="suggest_name" id="form-suggest-name-input" cols="30" rows="1" maxlength="40"></textarea>
+                        <input type="submit" value="Submit" id="form-submit-button">
+                        <!-- You reckon i could get a thank you to come up after you press submit or somethin taht'd be cool -->
+                    </form>
+                </main>
+                <footer>
+                    <h3 class="article-author">Author: <a href="https://steamcommunity.com/id/JimmalyBob/" target="_blank"> <img src="https://avatars.akamai.steamstatic.com/d3178fdab4b1b665c1ec8952eaf851fede686a08_full.jpg" alt="Author's Steam profile picture"> <!--not sure about using this link not sure how else to do it though really. look into javascript stuff ig. also not sure putting an img tag in an a tag is semantic html but makes more sense to me than using css to change the interactable area of the text--> JimmalyBob</a>, Lead Developer of Sihtric's Legacy</h3>
+                    <h4>Posted: 11-09-2024</h4>
+                </footer>
+            </article>
         </div>
-
-        <hr>
-        <h2>Sign up for our newsletter!</h2>
-        <form action="" method="">
-            <label for="first_name">First Name:</label>
-            <input type="text" id="first_name" name="first_name" required>
-            <br>
-            <label for="last_name">Last Name:</label>
-            <input type="text" id="last_name" name="last_name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email">
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password">
-            <br>
-            <label for="favourite_animal">Favourite Animal:</label>
-            <input type="radio" name="favourite_animal" id="dog" value="dog">
-            <label for="dog">Dog</label>
-            <input type="radio" name="favourite_animal" id="cat" value="cat">
-            <label for="cat">Cat</label>
-            <input type="radio" name="favourite_animal" id="hedgehog" value="hedgehog">
-            <label for="hedgehog">Hedgehog</label>
-            <br>
-            <label for="country">Country:</label>
-            <select name="country" id="country">
-                <option value="england">England</option>
-                <option value="wales">Wales</option>
-                <option value="scotland">Scotland</option>
-                <option value="northern_ireland">Northern Ireland</option>
-            </select>
-            <br>
-            <label for="bio">Biography:</label>
-            <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
-            <br>
-            <input type="checkbox" id="subscribe" name="subscribe">
-            <label for="subscribe">Subscribe to our newsletter!</label>
-            <br>
-            <input type="submit" value="Send!">
-        </form>
-        <hr>
-
     </main>
     <footer>
-        <h2>BrightBlogSite</h2>
-        <section>
-            <nav>
-                <ul id="footer-ul">
-                    <div>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Careers</a></li>
-                    </div>
-                    <div>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Terms & Conditions</a></li>
-                        <li><a href="">Cookie Policy</a></li>
-                    </div>
-                    
-                </ul>
-            </nav>
-        </section>
+        <hr>
+        <h2 id="about-the-devs">The Team</h2>
+        <p>This mod (and website) is made by a single developer - you can access their steam profile <a href="https://steamcommunity.com/id/JimmalyBob/" target="_blank">here</a> - with a friend helping to co-write the history and come up with ideas for the mod. If you would like to support them, just giving feedback and downloading the mod when it releases is more than enough.</p>
+        <!--navigation links and credits about the mod or something idk-->
+        <h4>Europa Universalis IV and all of its assets are property of <a href="https://www.paradoxinteractive.com/">Paradox Interactive AB</a> &copy; 2024</h4> <!--or something like this-->
     </footer>
 </body>
 </html>
